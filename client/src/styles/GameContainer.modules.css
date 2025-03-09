@@ -1,0 +1,101 @@
+.gameContainer {
+  background-color: var(--card-color);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gameContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.attemptsCounter {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--error-color);
+  background-color: rgba(231, 76, 60, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.streakCounter {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+.gameInstructions {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: rgba(52, 152, 219, 0.1);
+  border-radius: 6px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.dragInstructions {
+  text-align: center;
+  margin: 10px 0 20px;
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+}
+
+.submitBtn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submitBtn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submitBtn:active {
+  transform: translateY(1px);
+}
+
+.resultMessage {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeIn 0.5s;
+}
+
+.correct {
+  background-color: rgba(39, 174, 96, 0.2);
+  color: var(--success-color);
+  border-left: 4px solid var(--success-color);
+}
+
+.incorrect {
+  background-color: rgba(231, 76, 60, 0.2);
+  color: var(--error-color);
+  border-left: 4px solid var(--error-color);
+}
+
+.gameOver {
+  background-color: rgba(52, 152, 219, 0.2);
+  color: var(--primary-color);
+  border-left: 4px solid var(--primary-color);
+}
